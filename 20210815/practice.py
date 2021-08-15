@@ -17,4 +17,7 @@ btn1.pack()
 btn2 = Button(windows, text="clear screen", command=clear_fun)
 btn2.pack()
 
+display = Label(text="Hi Singular", fg="white", bg="white")
+display.pack()
+
 windows.mainloop()
