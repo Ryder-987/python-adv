@@ -39,6 +39,6 @@ else:
     print("Request fail")
 
 plt.plot(SiteName_list, AQI_list, "c-o", label="AQI")
-plt.plot(SiteName_list, AQI_list, "b--", label="PM2.5")
+plt.plot(SiteName_list, PM2_5_list, "b--", label="PM2.5")
 plt.legend(loc = "upper left")
 plt.show()
