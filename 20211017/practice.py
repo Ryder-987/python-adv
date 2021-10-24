@@ -28,11 +28,12 @@ def get_data():
     list_temp = []
     try:
         if info['lat']!="":
-            for i in range(7):
+            for i in range(8):
                 temps = info['daily'][i]['temp']['day']
                 list_temp.append(temps)
                 print('Day%d Temp=%s C' %(i,temps))
                 days[i](text="Day%d Temp=%s C" % (i, temps))
+            
             plt.plot(range(1,8) ,list_temp)
             plt.show
     except:
